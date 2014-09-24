@@ -2,43 +2,66 @@
     <div class="container-fluid">
         <div class="wrapper">
             <div class="row">
-                <div class="span-12">
-                    <div class="pull-left">
-                        <h1 class="brand">
-                            <a href="{{ URL::site() }}">
-                                <span class="brand-logo">
-                                    Bono PHP Framework<br />
-                                    Your Great Application
-                                </span>
+                <div class="pull-left">
+                    <h1 class="brand">
+                        <a href="{{ URL::site() }}">
+                            <span class="logo">
+                                <img src="{{ \URL::base('vendor/sleek-theme/img/xinix-logo.png') }}" alt="">
+                            </span>
+                            <span>Bono Sleek</span>
+                        </a>
+                    </h1>
+                </div>
+                <div class="pull-right">
+                    <ul class="flat topbar">
+                        <li class="notification">
+                            <a href="#">
+                                <i class="fa fa-bell-o"></i>
+                                <span class="badge">2</span>
                             </a>
-                        </h1>
-                    </div>
-                    <div class="pull-right">
-                        <div class="nav">
-                            <ul class="menu">
-                                @foreach(App::getInstance()->config('navbar.menus') as $uri)
-                                    @if(! isset($uri['children']))
-                                        <li>
-                                            <a href="{{ URL::site($uri['uri']) }}">{{ @$uri['icon'] }}</i>&nbsp;&nbsp;{{ @$uri['title'] }}</a>
-                                        </li>
-                                    @else
-                                        <li class="collapsible login">
-                                            <a href="#">{{ @$uri['icon'] }}&nbsp;&nbsp; {{ @$uri['title'] }} </a>
-                                            <ul>
-                                                @foreach (@$uri['children'] as $uri)
-                                                    <li>
-                                                        <a href="{{ URL::site($uri['uri']) }}">
-                                                            {{ @$uri['icon'] }}&nbsp;&nbsp;{{ @$uri['title'] }}
-                                                        </a>
-                                                    </li>
-                                                @endforeach
-                                            </ul>
-                                        </li>
-                                    @endif
-                                @endforeach
+                            <ul class="sub animated">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-comment-o"></i>
+                                        New Comment
+                                        <span class="sub-badge pull-right">+5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-envelope-o"></i>
+                                        New Message
+                                        <span class="sub-badge pull-right">+2</span>
+                                    </a>
+                                </li>
                             </ul>
-                        </div>
-                    </div>
+                        </li>
+                        <li class="user">
+                            <a href="#">
+                                <div class="avatar" style="background: url('{{ \URL::base('vendor/sleek-theme/img/xinix-logo.png') }}') center no-repeat; background-size: cover;"></div>
+                                <!-- <div class="avatar" style="background: url('{{ \URL::base('vendor/sleek-theme/img/a.jpg') }}') center no-repeat; background-size: cover;"></div> -->
+                                <span>
+                                    <small>Welcome, </small>
+                                    Muhammad Ali Alaydrus
+                                </span>
+                                <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="sub animated">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user"></i>
+                                        Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-sign-out"></i>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
