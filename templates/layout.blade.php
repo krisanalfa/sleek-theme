@@ -26,18 +26,30 @@
 
 <body>
     <!-- NAVBAR -->
+
     @include('components.navbar')
 
-    {{ f('notification.show') }}
 
-    <!-- PAGE CONTENT -->
-    @yield('content')
+    <div class="container-fluid">
+        <div class="row">
 
-    <div id="footer">
+            @include('components.sidebar')
+
+            <div class="span-10 main">
+                {{ f('notification.show') }}
+
+                <!-- PAGE CONTENT -->
+                @yield('content')
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div id="footer">
         <p>Copyright &copy; 2014
             <a href="http://xinix.co.id" target="blank">Xinix</a>. Some right(s) reserved.
         </p>
-    </div>
+    </div> -->
     <script type="text/javascript" charset="utf-8" src="{{ Theme::base('/vendor/sleek-theme/js/underscore.js') }}"></script>
     <script type="text/javascript" charset="utf-8" src="{{ Theme::base('/vendor/sleek-theme/js/main.js') }}"></script>
     <script type="text/javascript" charset="utf-8">
