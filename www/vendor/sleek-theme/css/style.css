@@ -92,10 +92,10 @@ fieldset legend { display: block; margin-bottom: 10px; font-size: 21px; line-hei
     -o-border-radius: 5px;
     border-radius: 5px;
 }
-.nav-menu .topbar ul.sub li { display: block; float: none; margin: 0; border-bottom: 1px solid #e5e5e5; }
+.nav-menu .topbar ul.sub li { display: block; float: none; margin: 0; padding-left: 15px; }
 .nav-menu .topbar ul.sub li:hover { background: #eee; }
-.nav-menu .topbar ul.sub li:last-child { border-bottom: 0; }
-.nav-menu .topbar ul.sub li a { padding: 5px 10px; color: #465d6f; font-family: open_sansregular; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; }
+.nav-menu .topbar ul.sub li a { padding: 5px 15px 5px 0; color: #465d6f; font-family: open_sansregular; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; border-bottom: 1px solid #e5e5e5; }
+.nav-menu .topbar ul.sub li:last-child a { border-bottom: 0; }
 .nav-menu .topbar ul.sub li:hover a { color: #08c; }
 .nav-menu .topbar ul.sub li a i { margin-right: 3px; }
 .nav-menu .topbar ul.sub li .sub-badge { color: #f79263; }
@@ -114,8 +114,8 @@ fieldset legend { display: block; margin-bottom: 10px; font-size: 21px; line-hei
 
 .row .sidebar { position: fixed; top: 60px; bottom: 0; left: 0; z-index: 1000; display: block; overflow-x: hidden; overflow-y: auto; background-color: #f7f7f7; border-right: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; }
 .sidebar .nav { display: block; margin: 0; padding: 0; }
-.sidebar .nav li { display: block; float: none; margin-bottom: -1px; }
-.sidebar .nav li a { padding: 10px 15px; display: block; color: #465d6f; border-bottom: 1px solid #e5e5e5; border-top: 1px solid transparent; }
+.sidebar .nav li { display: block; float: none; margin-bottom: -1px; padding-left: 15px; }
+.sidebar .nav li a { padding: 10px 15px 10px 0; display: block; color: #465d6f; border-bottom: 1px solid #e5e5e5; border-top: 1px solid transparent; }
 .sidebar .nav li a i.icon {
     font-style: normal; float: right;
     -webkit-transform: rotate(0deg) scale(1);
@@ -132,12 +132,11 @@ fieldset legend { display: block; margin-bottom: 10px; font-size: 21px; line-hei
     -ms-transform: rotate(45deg) scale(1);
     transform: rotate(45deg) scale(1);
 }
-.sidebar .nav li a:hover { background: #eee; color: #08c; border-color: #e5e5e5; }
+.sidebar .nav>li:hover a { color: #08c; }
 .sidebar .nav li:first-child a.select { border-top: 1px solid transparent; }
-.sidebar .nav li a.select { border-color: #ccc; color: #08c; background: #eee; }
+.sidebar .nav li a.select { border-color: #ccc; color: #08c; }
 .sidebar .nav li.collapsible>a i.fa { float: right; line-height: 150%; }
 .sidebar .nav li.collapsible ul { position: relative; padding: 0; }
-.sidebar .nav li.collapsible ul a { padding-left: 25px; }
 .row .main { padding: 20px 30px 20px; margin-left: 213px; }
 
 .table-container {
