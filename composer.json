@@ -2,7 +2,7 @@
     "name": "krisanalfatimur/sleek-theme",
     "description": "Sleek theme for Blade Template, built for Bono PHP Framework",
     "require": {
-        "krisanalfa/blade-theme": "~0.4.7"
+        "krisanalfa/blade-theme": "~0.5.2"
     },
     "license": "MIT",
     "authors": [
@@ -11,5 +11,8 @@
             "email": "krisan47@gmail.com"
         }
     ],
+    "autoload": {
+        "KrisanAlfa\\Theme\\SleekTheme": "src"
+    }
     "minimum-stability": "dev"
 }

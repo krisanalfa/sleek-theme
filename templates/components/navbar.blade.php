@@ -3,6 +3,7 @@
         <div class="wrapper">
             <div class="row">
                 <div class="pull-left">
+                    @section('brand')
                     <h1 class="brand">
                         <a href="{{ URL::site() }}">
                             <span class="logo">
@@ -11,9 +12,12 @@
                             <span>Bono Sleek</span>
                         </a>
                     </h1>
+                    @show
                 </div>
                 <div class="pull-right">
                     <ul class="flat topbar">
+                        <!-- Notification -->
+                        @section('notification')
                         <li class="notification">
                             <a href="#">
                                 <i class="fa fa-bell-o"></i>
@@ -36,13 +40,17 @@
                                 </li>
                             </ul>
                         </li>
+                        @show
+                        <!-- End of Notification -->
+
+                        <!-- User Navigation -->
+                        @section('user.navigation')
                         <li class="user">
                             <a href="#">
                                 <div class="avatar" style="background: url('{{ \URL::base('vendor/sleek-theme/img/xinix-logo.png') }}') center no-repeat; background-size: cover;"></div>
-                                <!-- <div class="avatar" style="background: url('{{ \URL::base('vendor/sleek-theme/img/a.jpg') }}') center no-repeat; background-size: cover;"></div> -->
                                 <span>
                                     <small>Welcome, </small>
-                                    Muhammad Ali Alaydrus
+                                    Admin
                                 </span>
                                 <i class="fa fa-caret-down"></i>
                             </a>
@@ -61,6 +69,8 @@
                                 </li>
                             </ul>
                         </li>
+                        @show
+                        <!-- End of User Navigation -->
                     </ul>
                 </div>
             </div>

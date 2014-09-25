@@ -1,3 +1,14 @@
+@section('navbar')
+@endsection
+
+@section('sidebar')
+@endsection
+
+@section('content.wrapper')
+<!-- FIXME: Ali, belum bisa ke tengah kalo si sidebar dan navbar-nya gua ilangin -->
+<div class="span-12 main">
+@endsection
+
 @section('title')
 Login
 @endsection

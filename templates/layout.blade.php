@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>@yield('title', 'Bono Application')</title>
+    <title>@yield('title', 'Sleek Theme')</title>
 
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -22,20 +22,25 @@
 
     <!-- PAGE LEVEL STYLING -->
     @yield('styler')
+    <!-- END OF PAGE LEVEL STYLING -->
 </head>
 
 <body>
     <!-- NAVBAR -->
-
-    @include('components.navbar')
-
+    @section('navbar')
+        @include('components.navbar')
+    @show
+    <!-- END OF NAVBAR -->
 
     <div class="container-fluid">
         <div class="row">
 
-            @include('components.sidebar')
+            <!-- SIDEBAR -->
+            @section('sidebar')
+                @include('components.sidebar')
+            @show
 
-            <div class="span-10 main">
+            @yield('content.wrapper', '<div class="span-10 main">')
                 {{ f('notification.show') }}
 
                 <!-- PAGE CONTENT -->
@@ -61,5 +66,6 @@
 
     <!-- PAGE LEVEL SCRIPT -->
     @yield('injector')
+    <!-- END OF PAGE LEVEL SCRIPT -->
 </body>
 </html>
