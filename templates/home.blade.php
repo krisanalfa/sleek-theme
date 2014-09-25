@@ -1,7 +1,3 @@
-@section('title')
-Bono Application
-@endsection
-
 @section('content')
 <div class="row">
     <div class="welcome">
