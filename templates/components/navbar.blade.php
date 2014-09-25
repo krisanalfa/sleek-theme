@@ -3,6 +3,8 @@
         <div class="wrapper">
             <div class="row">
                 <div class="pull-left">
+
+                    <!-- BRAND -->
                     @section('brand')
                     <h1 class="brand">
                         <a href="{{ URL::site() }}">
@@ -13,10 +15,13 @@
                         </a>
                     </h1>
                     @show
+                    <!-- END OF BRAND -->
+
                 </div>
                 <div class="pull-right">
                     <ul class="flat topbar">
-                        <!-- Notification -->
+
+                        <!-- NOTIFICATION -->
                         @section('notification')
                         <li class="notification">
                             <a href="#">
@@ -41,11 +46,12 @@
                             </ul>
                         </li>
                         @show
-                        <!-- End of Notification -->
+                        <!-- END OF NOTIFICATION -->
 
-                        <!-- User Navigation -->
+                        <!-- USER NAVIGATION -->
                         @section('user.navigation')
                         <li class="user">
+                            @section('user.navigation.avatar')
                             <a href="#">
                                 <div class="avatar" style="background: url('{{ \URL::base('vendor/sleek-theme/img/xinix-logo.png') }}') center no-repeat; background-size: cover;"></div>
                                 <span>
@@ -54,7 +60,10 @@
                                 </span>
                                 <i class="fa fa-caret-down"></i>
                             </a>
+                            @show
+                            @section('user.navigation.menu')
                             <ul class="sub animated">
+                                @section('user.navigation.menu.children')
                                 <li>
                                     <a href="#">
                                         <i class="fa fa-user"></i>
@@ -67,10 +76,13 @@
                                         Logout
                                     </a>
                                 </li>
+                                @show
                             </ul>
+                            @show
                         </li>
                         @show
-                        <!-- End of User Navigation -->
+                        <!-- END OF USER NAVIGATION -->
+
                     </ul>
                 </div>
             </div>

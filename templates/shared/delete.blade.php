@@ -17,7 +17,7 @@
 
             @section('delete.warning')
             <p>
-                Are you sure want to delete {{ count($ids) }} entry(s)?
+                Are you sure want to delete this entry?
             </p>
             @show
 
