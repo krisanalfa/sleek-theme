@@ -13,6 +13,6 @@
     ],
     "autoload": {
         "KrisanAlfa\\Theme\\SleekTheme": "src"
-    }
+    },
     "minimum-stability": "dev"
 }
