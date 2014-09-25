@@ -109,7 +109,7 @@ fieldset legend { display: block; margin-bottom: 10px; font-size: 21px; line-hei
     border-radius: 500px;
 }
 .nav-menu .topbar .notification>a { font-size: 1.4em; }
-.nav-menu .topbar .notification .sub { width: 250px; margin-top: 7px; }
+.nav-menu .topbar .notification .sub { width: 210px; margin-top: 7px; }
 /*.nav-menu .topbar .notification .sub .sub-badge{ color: #f79263; }*/
 
 .row .sidebar { position: fixed; top: 60px; bottom: 0; left: 0; z-index: 1000; display: block; overflow-x: hidden; overflow-y: auto; background-color: #f7f7f7; border-right: 1px solid #e5e5e5; border-top: 1px solid #e5e5e5; }
