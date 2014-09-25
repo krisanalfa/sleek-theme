@@ -51,6 +51,8 @@
                         <!-- USER NAVIGATION -->
                         @section('user.navigation')
                         <li class="user">
+
+                            <!-- USER NAVIGATION AVATAR / IMAGE -->
                             @section('user.navigation.avatar')
                             <a href="#">
                                 <div class="avatar" style="background: url('{{ \URL::base('vendor/sleek-theme/img/xinix-logo.png') }}') center no-repeat; background-size: cover;"></div>
@@ -61,8 +63,13 @@
                                 <i class="fa fa-caret-down"></i>
                             </a>
                             @show
+                            <!-- END OF USER NAVIGATION AVATAR / IMAGE -->
+
+                            <!-- USER NAVIGATION MENU / DROPDOWN -->
                             @section('user.navigation.menu')
                             <ul class="sub animated">
+
+                                <!-- USER NAVIGATION CHILD MENU -->
                                 @section('user.navigation.menu.children')
                                 <li>
                                     <a href="#">
@@ -83,8 +90,11 @@
                                     </a>
                                 </li>
                                 @show
+                                <!-- END OF USER NAVIGATION CHILD MENU -->
+
                             </ul>
                             @show
+                            <!-- END OF USER NAVIGATION MENU / DROPDOWN -->
                         </li>
                         @show
                         <!-- END OF USER NAVIGATION -->
