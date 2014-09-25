@@ -72,6 +72,12 @@
                                 </li>
                                 <li>
                                     <a href="#">
+                                        <i class="fa fa-cogs"></i>
+                                        Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
                                         <i class="fa fa-sign-out"></i>
                                         Logout
                                     </a>
