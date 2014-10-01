@@ -87,20 +87,7 @@
 
     <!-- PAGINATION -->
     @section('pagination')
-    <!-- FIXME: Ali, styling kurang rapih nih, ke atas terlalu rapet kayaknya :) -->
-    <ul class="pagination centered">
-        <li class="arrow-first"><a href="#"> |< </a></li>
-        <li class="prev"><a href="#"> < </a></li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li class="unavailable"><a href="#">…</a></li>
-        <li><a href="#">8</a></li>
-        <li><a href="#">9</a></li>
-        <li><a href="#">10</a></li>
-        <li class="next"><a href="#"> > </a></li>
-        <li class="arrow-last"><a href="#"> >| </a></li>
-    </ul>
+    {{ KrisanAlfa\Theme\Components\Pagination::create($entries)->paginate(); }}
     @show
     <!-- END OF PAGINATION -->
 
