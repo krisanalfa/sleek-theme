@@ -87,7 +87,9 @@
 
     <!-- PAGINATION -->
     @section('pagination')
-    {{ KrisanAlfa\Theme\Components\Pagination::create($entries)->paginate(); }}
+    <div class="pager-wrapper">
+        {{ KrisanAlfa\Theme\Components\Pagination::create($entries)->paginate(); }}
+    </div>
     @show
     <!-- END OF PAGINATION -->
 
