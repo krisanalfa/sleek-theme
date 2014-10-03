@@ -25,7 +25,7 @@
     <!-- END OF PAGE LEVEL STYLING -->
 </head>
 
-<body>
+<body class="@yield('body.class', '')">
     <!-- NAVBAR -->
     @section('navbar')
         @include('components.navbar')
