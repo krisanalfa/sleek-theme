@@ -14,6 +14,10 @@ version in your `composer.json` file. And don't forget to add `dev` to your
 "require": {
     "krisanalfa/sleek-theme": "dev-master"
 },
+"repositories": [{
+    "type": "vcs",
+    "url": "https://github.com/xinix-technology/naked-sleek.git"
+}],
 "minimum-stability": "dev"
 ```
 
